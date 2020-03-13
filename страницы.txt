@@ -1,0 +1,29 @@
+Лого                                     index.html
+Линк телефона                            href = "tel:+79060979733"
+почта                                    "mailto:info@gurovgroup.ru"
+ПРайсл-лист на услуги                    price.html
+Почему мы                                why.html
+Меню 
+Главная                                  index.html
+О нас                                    about.html
+Услуги и цены                            price.html
+Наши работы                              works.html
+Отзывы                                   feedback.html
+Контакты                                 contacts.html
+Ремонт квартир                           repair_flat.html
+Ремонт коттеджей                         repair_cottage.html
+Дизайн интерьера                         design.html
+Евроремонт                               evro_repair.html
+Косметический ремонт                     cosmetic_repair.html
+Кап ремонт                               capital_repair.html
+Отделка квартир                          finish_repair.html
+Услуги электрика                         electrick.html
+Услуги сантехн                           plumber.html
+Скидки                                   sales.html
+Гарантия                                 warranty.html
+16 страниц 
++ главная
++футер//
++slider
+
+ 

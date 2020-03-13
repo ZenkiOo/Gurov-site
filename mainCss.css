@@ -67,6 +67,8 @@ ul {
     width: 1200px;
     margin: auto;
     background: #EDEEF4;
+    height: 100%;
+    
     
 }
 
@@ -247,7 +249,7 @@ color: #fff;
 
 }
 .menu_container {
-    height : 100vh;
+    height : 520px;
     
 }
 
@@ -266,6 +268,7 @@ color: #fff;
 }
 
    .sub_menu {
+    
     position: absolute; 
     opacity: 0;
     visibility: hidden;
@@ -301,7 +304,7 @@ color: #fff;
 }
     .menu_main li:hover .sub_menu { 
     opacity: 1;
-    visibility: visible;
+    /* visibility: visible;^^^^^^^^^^^^ Подменю */
     transition-delay: .1s;
 }
 
@@ -346,7 +349,7 @@ color: #fff;
 
 }
 .add_menu_title {
-
+    
     width: 270px;
     height: 50px;
     background: #e0e0e0;
@@ -371,7 +374,6 @@ color: #fff;
     position: absolute;
     background: #fff;
     width: 905px;
-    height: 100%;
     margin-left: 295px;
     margin-top: 220px;
     border: 1px solid #ccc;
@@ -418,7 +420,7 @@ color: #fff;
 .mp_list ul li {
 
     padding: 5px 20px 5px 30px;
-
+    
 }
 .main_services {
 
@@ -494,17 +496,38 @@ color: #fff;
 
 
 */
-.footer {
-
+.f_index{
+    margin-top: 2130px;
+}.f_feed{
+    margin-top: 430px;
+}.f_about{
+    margin-top: 1050px;
+}.f_price{
+    margin-top: 1455px;
+}.f_contacts{
+    margin-top: 105px;
+}.f_why{
+    margin-top: 20px;
+}.f_repair_flat{
+    margin-top: 20px;
+}.f_repair_cottage{
+    margin-top: 270px;
+}.f_design{
+    margin-top: 20px;
+}.f_evro_repair{
+    margin-top: 230px;
+}.f_cosmetic_repair{
+    margin-top: 325px;
+}
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^Настройка отступа footer */
+.footer_inner {
+    /* margin-top: 2500px; */
     display: flex;
     position: absolute;
-    left: 0; 
-    bottom: 0;
-    top: 3120px;
     color: #ccc;
-    width: 100%;
     height: 250px;
     background: #38393e;
+    width: 100%;
 
 }
 .column_footer {
@@ -589,4 +612,123 @@ color: #fff;
     padding: 5px 0;
 
 }
+/* ABOUT PAGE
+##########################################################################
 
+
+*/
+.document_container {
+    display: flex;
+    background: #CEA272;
+    justify-content: center;
+    width: 265px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    
+}#doc_1{
+    display: block;
+    padding: 2px 2px 2px 2px;
+
+}.official_working{
+    display: block;
+    background: #CEA272;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 265px;
+    color: #fff;
+    font-size: larger;
+    font-family: 'Russo One', ;
+    padding-bottom: 3px;
+
+}.document_container_m{
+    margin-top: 50px;
+}
+
+/* FEEDBACK PAGE
+##########################################################################
+
+
+*/
+.fb_frame{
+    border: 1px solid #ccc;
+    margin: 20px 25px;
+
+}.fb_cont{
+    padding: 10px;
+
+}.p_bold{
+    font-weight: bold;
+}
+
+/* PRICE PAGE
+##########################################################################
+
+
+*/
+table {
+    font-size: 14px;
+    border-collapse: collapse;
+    text-align: center;
+    width: 97%;
+    margin: 20px 10px 10px 15px;
+
+} th, td:first-child {
+    
+    background: #e0e0e0;
+    color: #666;
+    padding: 10px 20px;
+    width: 625px;
+
+} th, td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+
+} td {
+    background: rgba(206, 162, 114, .5);
+
+} th:first-child, td:first-child {
+    text-align: left;
+
+} thead {
+    font-weight: bolder;
+}
+
+/* CONTACTS PAGE
+##########################################################################
+
+
+*/
+.contacts_column {
+    padding: 25px;
+
+} .cont_padd {
+    padding: 10px 0;
+
+} .cont_num {
+    font-size: 30px;
+    font-weight: bold;
+} .cont_mail {
+    color: #CEA272;
+    font-size: larger;
+
+} .cont_ip {
+    font-weight: bold;
+}
+
+/* REPAIR PAGE
+##########################################################################
+
+
+*/
+.repair_padd {
+    padding-bottom: 146px;
+}
+
+/* CONTACTS PAGE
+##########################################################################
+
+
+*/
