@@ -518,6 +518,12 @@ color: #fff;
     margin-top: 230px;
 }.f_cosmetic_repair{
     margin-top: 325px;
+}.f_capital_repair{
+    margin-top: 255px;
+}.f_electric{
+    margin-top: 100px;
+}.f_plumber{
+    margin-top: 140px;
 }
 /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^Настройка отступа footer */
 .footer_inner {
@@ -727,8 +733,20 @@ table {
     padding-bottom: 146px;
 }
 
-/* CONTACTS PAGE
+/* SALES PAGE
 ##########################################################################
 
 
 */
+.padd_sales {
+    padding-bottom: 249px;
+}
+
+/* WARRANTY PAGE
+##########################################################################
+
+
+*/
+.padd_warranty {
+    padding-bottom: 435px;
+}
