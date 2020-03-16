@@ -1,0 +1,809 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+  background-color: #EDEEF4;
+  font-family: "Open Sans";
+  width: 100%;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+  
+}
+.wrapper {
+
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #EDEEF4;
+    height: 100%;
+    padding: 0 2%;
+    
+    
+}
+
+
+
+
+
+/* Шапка
+##########################################################################
+
+
+*/
+.row_top {
+    height: 140px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #EDEEF4;
+}
+
+.top_item {
+
+    width: 25%;
+}
+.logo, .schedule, .container_phone {
+    
+    padding-top: 30px;
+
+}
+.container_phone {
+    display: flex;
+    flex-direction: column;
+
+}
+.schedule_inner  {
+    
+    font-size: 15px;
+
+}
+.display_phone {
+
+    font-size: 12px;
+
+}
+.link_phone {
+
+    font-size: 30px;
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+
+}
+.gauge {
+    font-size: 12px;
+    text-align: left;
+    width: 100%;
+
+}
+.info_mail a{
+    display: block;
+    padding-top: 7px;
+    color: #CEA272;
+    text-decoration: none;
+}
+
+
+
+/* Кнопки шапки
+##########################################################################
+
+
+*/
+.header_button {
+    display: flex;
+    padding: 3px;
+    margin-top: 17px;
+}
+
+.btn_order {
+    text-align: center;
+}
+
+.btn_cont {
+    padding: 2px 0;
+}
+
+.btn {
+    display: block;
+    padding: 6px;
+    text-decoration: none;
+    color: #CEA272;
+    border: 2px solid #CEA272;
+    border-radius: 11px;
+    text-align: center;
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.btn:hover {
+
+    transition: background .2s linear;
+    color: #fff;
+    background: #CEA272;
+
+}
+
+
+
+
+
+
+/*Верхнее меню 
+##########################################################################
+
+
+*/
+.menu_index {
+
+    height: 55px;
+    align-content: center;
+    
+}
+#active {
+background: #CEA272;
+color: #fff;
+}
+
+
+
+.menu_index ul li a {
+
+  display: block;
+  float :left;
+  font-family: 'Russo One', ;
+  font-weight: 600;
+  text-decoration: none;
+  color: #CEA272;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  background: #fff;
+  /* justify-content: center; */
+  
+
+}
+.menu_index ul li a:hover {
+
+    transition: background .2s linear;
+    background: #CEA272;
+    color: #fff;
+
+}
+.top_menu {
+    
+    /* line-height: 55px; */
+    display : block;
+    width: 16.6%;
+    height: 55px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 15px;
+    
+
+}
+
+
+
+
+/*Боковое меню
+##########################################################################
+
+
+*/
+.top_menu_main{
+
+    padding-top: 25px;
+
+}
+.top_menu_main_inner {
+
+    width: 25%;
+    height: 50px;
+    background: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.menu_container {
+    height : 520px;
+    
+}
+
+.header_button {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.menu_main {
+    
+    width: 25%; 
+    height: 300px;
+    font-family: 'Open Sans', ; 
+    font-size: 14px; 
+    font-weight: 400;
+}
+
+   .sub_menu {
+    
+    position: absolute; 
+    opacity: 0;
+    visibility: hidden;
+    margin-left: 269px; 
+    margin-top: -49px; 
+    
+    
+}
+    .menu_link , .menu_link_in{
+    display: block; 
+    padding: 17px; 
+    text-decoration: none; 
+    color: #666; 
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background-color: #fff; 
+    border-bottom: none; 
+}
+
+    .brd {
+    border-bottom: 1px solid #ccc;
+}
+
+    .menu_link_in:hover {
+    color: #ffe; 
+    background-color: #CEA272; 
+
+}
+
+    .menu_link:hover {
+    color: #ffe; 
+    background-color: #CEA272; 
+}
+    .menu_main li:hover .sub_menu { 
+    opacity: 1;
+    /* visibility: visible;^^^^^^^^^^^^ Подменю */
+    transition-delay: .1s;
+}
+
+
+
+/* Баннер в шапке
+##########################################################################
+
+
+*/
+.row {
+    width: 100%;
+    height: 250px;
+}
+
+
+/*  Дополнительное меню
+##########################################################################
+
+
+*/
+.opt_add_menu ul li a {
+
+    display: block;
+    padding: 17px; 
+    text-decoration: none; 
+    color: #666; 
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background-color: #fff; 
+    border-bottom: none;
+    width: 25%; 
+    font-family: 'Open Sans', ; 
+    font-size: 14px; 
+    font-weight: 400;
+
+}
+.opt_add_menu ul li a:hover {
+
+    color: #ffe; 
+    background-color: #CEA272;
+
+}
+.add_menu_title {
+    
+    width: 25%;
+    height: 50px;
+    background: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.opt_add_menu ul li .brd {
+
+    border-bottom: 1px solid #ccc;
+
+}
+
+
+/*  Контент
+##########################################################################
+
+
+*/
+.cont_column {
+    /* position: absolute; */
+    background: #fff;
+    width: 72.5%;
+    margin-left: 27%;
+    margin-top: -745px;
+    /* border: 1px solid #ccc;
+    border-radius: 2px; */
+    line-height: normal;
+    font-size: 14px;
+}
+
+.img_cont {
+    
+    width: 100%;
+    height: 300px;
+    background: url(workimg.png) no-repeat;
+    background-size: 100%;
+
+}
+/* .title_default {
+
+    font-size: 24px;
+    margin: 10px 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #d6d6d6;
+    padding-left: 14px;
+    border-left: 5px solid #CEA272;
+    
+} */
+.column_padd {
+
+    display: block;
+    padding: 15px 20px 10px 20px;
+    
+}
+.title_med {
+
+    display: block;
+    padding: 5px 20px 0 20px;
+    font-weight: bold;
+    font-size: larger;
+
+} */
+ .mp_list ul li {
+
+    padding: 5px 20px 5px 30px;
+    
+} */
+.main_services {
+
+    display: flex;
+
+}
+.main_services_inner {
+
+    text-align: center;
+    padding: 0 20px;
+
+}
+.icons {
+
+    display: flex;
+    flex-direction: column;
+    
+}
+.icons_line {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 60px;
+
+}
+.icons_container {
+
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    height: 190px;
+    background: #fff;
+    align-content: center;
+    justify-content: center;
+    
+}
+.icon {
+
+    height: 100px;
+    width: 140px;
+    padding-left: 40px;
+
+}
+.icon_height {
+
+    height: 90px;
+    padding-bottom: 30px;
+    
+}
+
+.icon_text {
+
+    display:block;
+    text-align: center;
+    margin-top: 12px;
+
+}
+.icon_5 {
+
+    height: 100px;
+
+}
+.icon5 {
+
+    margin-top: 5px;
+
+}
+
+
+
+/*  Подвал
+##########################################################################
+
+
+*/
+.f_index{
+    margin-top: 2130px;
+}.f_feed{
+    margin-top: 430px;
+}.f_about{
+    margin-top: 1050px;
+}.f_price{
+    margin-top: 1455px;
+}.f_contacts{
+    margin-top: 105px;
+}.f_why{
+    margin-top: 20px;
+}.f_repair_flat{
+    margin-top: 20px;
+}.f_repair_cottage{
+    margin-top: 270px;
+}.f_design{
+    margin-top: 20px;
+}.f_evro_repair{
+    margin-top: 230px;
+}.f_cosmetic_repair{
+    margin-top: 325px;
+}.f_capital_repair{
+    margin-top: 255px;
+}.f_electric{
+    margin-top: 100px;
+}.f_plumber{
+    margin-top: 140px;
+}
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^Настройка отступа footer */
+.footer_inner {
+    /* margin-top: 2500px; */
+    display: none;
+    position: absolute;
+    color: #ccc;
+    height: 250px;
+    background: #38393e;
+    width: 100%;
+
+}
+.column_footer {
+
+    width: 200px;
+    margin-top: 50px;
+    
+}
+.menu_index_footer {
+
+    margin-left: 180px;
+    margin-top: 25px;
+
+}
+.add_menu_footer {
+
+    margin-top: 25px;
+
+}
+.opt_add_menu_footer {
+
+    margin-top: 15px;
+    
+}
+.logo_container_footer {
+
+    margin-left: 80px;
+
+}
+.rights {
+
+    display: block;
+    font-size: 13px;
+    margin-top: 25px;
+
+}
+.top_menu_footer, .menu_link_footer, .add_menu_link_footer {
+
+    text-decoration: none;
+    color: gray;
+    padding: 3px 0;
+    display: block;
+    font-size: small;
+
+}
+.top_menu_footer:hover {
+
+    color: #ccc;
+    
+}
+.menu_link_footer:hover {
+
+    color: #ccc;
+
+}
+.add_menu_link_footer:hover {
+
+    color: #ccc;
+
+}
+.menu_main_footer {
+
+    margin-top: 25px;
+
+}
+.uslugi {
+
+    padding-bottom: 15px;
+}
+.about_tel_link {
+
+    text-decoration: none;
+    color: honeydew;
+    font-size: x-large;
+
+}
+.about_tel_mail {
+
+    display: block;
+    color: #CEA272;
+    font-size: 20px;
+    padding: 5px 0;
+
+}
+/* ABOUT PAGE
+##########################################################################
+
+
+*/
+.document_container {
+    display: flex;
+    background: #CEA272;
+    justify-content: center;
+    width: 265px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    
+}#doc_1{
+    display: block;
+    padding: 2px 2px 2px 2px;
+
+}.official_working{
+    display: block;
+    background: #CEA272;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 265px;
+    color: #fff;
+    font-size: larger;
+    font-family: 'Russo One', ;
+    padding-bottom: 3px;
+
+}.document_container_m{
+    margin-top: 50px;
+}
+
+/* FEEDBACK PAGE
+##########################################################################
+
+
+*/
+.fb_frame{
+    border: 1px solid #ccc;
+    margin: 20px 25px;
+
+}.fb_cont{
+    padding: 10px;
+
+}.p_bold{
+    font-weight: bold;
+}
+
+/* PRICE PAGE
+##########################################################################
+
+
+*/
+table {
+    font-size: 14px;
+    border-collapse: collapse;
+    text-align: center;
+    width: 97%;
+    margin: 20px 10px 10px 15px;
+
+} th, td:first-child {
+    
+    background: #e0e0e0;
+    color: #666;
+    padding: 10px 20px;
+    width: 625px;
+
+} th, td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+
+} td {
+    background: rgba(206, 162, 114, .5);
+
+} th:first-child, td:first-child {
+    text-align: left;
+
+} thead {
+    font-weight: bolder;
+}
+
+/* CONTACTS PAGE
+##########################################################################
+
+
+*/
+.contacts_column {
+    padding: 25px;
+
+} .cont_padd {
+    padding: 10px 0;
+
+} .cont_num {
+    font-size: 30px;
+    font-weight: bold;
+} .cont_mail {
+    color: #CEA272;
+    font-size: larger;
+
+} .cont_ip {
+    font-weight: bold;
+}
+
+/* REPAIR PAGE
+##########################################################################
+
+
+*/
+.repair_padd {
+    padding-bottom: 146px;
+}
+
+/* SALES PAGE
+##########################################################################
+
+
+*/
+.padd_sales {
+    padding-bottom: 249px;
+}
+
+/* WARRANTY PAGE
+##########################################################################
+
+
+*/
+.padd_warranty {
+    padding-bottom: 435px;
+}
+@media screen and (max-width: 1100px) {
+    .schedule {
+        display: none;
+        }
+        .logo {
+            width: 33.3%;
+        }
+        .container_phone{
+            width: 33.3%;
+        }
+        .header_button{
+            width: 33.3%;
+        }
+        .wrapper {
+            padding-left: 3%;
+        }
+    
+    
+} @media screen and (max-width : 785px) {
+    .container_phone {
+        display: none;
+    } .logo  {
+        width: 50%;
+    } .header_button {
+        width: 50%;
+    }
+
+}
+
+/* @media screen and (max-width : 700px) {
+    .header_button {
+        display: none;
+
+    }
+    .top_menu_main_inner {
+        display: none;
+        
+    }
+    .menu_main {
+        display: none;
+    }
+    .add_menu_title_inner {
+        display: none;
+    }
+    
+} */
