@@ -166,7 +166,7 @@ ul {
     text-decoration: none;
     color: #CEA272;
     border: 2px solid #CEA272;
-    border-radius: 20px;
+    border-radius: 5px;
     text-align: center;
     width: 100%;
     font-weight: 400;
@@ -852,7 +852,7 @@ table {
         
     } .mobile_menu_a {
         display: block;
-        margin: 3px 0;
+        margin: 3px 50px;
         background: #CEA272;
         color: #fff;
         padding: 18px 0;
@@ -860,6 +860,7 @@ table {
         text-decoration: none;
         border: 0 solid #CEA272;
         border-radius: 30px;
+        width: 85%;
 
     } .mobile_menu_a:hover {
         color: #CEA272;
@@ -883,6 +884,103 @@ table {
         color: #CEA272;
         font-size: 25px;
     } 
+
+
+    .m_wrapper{
+        margin: 0 auto 250px auto;
+        width: 99%;
+        background-color: #CEA272;
+        position: relative;
+        color: white;
+        text-align: center;
+        height: 40px;
+        font-family: 'Arial';
+    }
+    
+    #check-menu{
+        display: none;
+    }
+    
+    label{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        z-index: 2;
+        line-height: 40px;
+    }
+    
+    .burger-line{
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        width: 35px;
+        height: 2px;
+        background-color: #fff;
+        transition: .5s all;
+    }
+    
+    .second, .third{
+        top: 18px;
+    }
+    
+    .fourth{
+        top: 28px;
+    }
+    
+    .main-menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        transform: translateY(100%);
+        max-height: 0;
+        font-size: 0;
+        overflow: hidden;
+        transition: .5s all;
+    }
+    
+    #mob_item {
+        display: block;
+        width: 100%;
+        margin-top: 3px;
+        padding: 12px;
+        color: whitesmoke;
+        text-decoration: none;
+        border-top: 1px solid rgba(255,255,255,.3);
+        border-radius: 3px;
+        background-color: #CEA272;
+    }
+    
+    #mob_item:hover{
+        background-color: #edeef3;
+        color : #CEA272;
+    }
+    
+    #check-menu:checked ~ .main-menu{
+        max-height: 500px;
+        font-size: 16px;
+    }
+    
+    #check-menu:checked ~ .first{
+        display: none;
+    }
+    
+    #check-menu:checked ~ .second{
+        transform: rotate(45deg);
+    }
+    
+    #check-menu:checked ~ .third{
+        transform: rotate(-45deg);
+    }
+    
+    #check-menu:checked ~ .fourth{
+        display: none;
+    }
  
 }
 
