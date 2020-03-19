@@ -9,11 +9,11 @@
 Услуги и цены                            price.html
 Наши работы                              works.html
 Отзывы                                   feedback.html
-Контакты                                 contacts.html
+Контакты                                 contacts.html            map err
 Ремонт квартир                           repair_flat.html
 Ремонт коттеджей                         repair_cottage.html
 Дизайн интерьера                         design.html
-Евроремонт                               evro_repair.html
+Евроремонт                               euro_repair.html
 Косметический ремонт                     cosmetic_repair.html
 Кап ремонт                               capital_repair.html
 Отделка квартир                          finish_repair.html
